@@ -1,0 +1,60 @@
+{
+  "name": "@qlheric/dsh-toolbox",
+  "version": "0.1.0",
+  "description": "DSH 工具箱：一个包注册十个零依赖确定性工具（json / calculator / encoding / diff / regex / time / csv / stat / markdown / schema）。",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "lib/**",
+    "locale/*.json",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "tools",
+    "toolkit",
+    "json",
+    "csv",
+    "regex",
+    "diff",
+    "calculator"
+  ],
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "scripts": {
+    "test": "node --test test/"
+  },
+  "meta": {
+    "title": "DSH 工具箱（Toolbox）",
+    "description": "一个包装齐十个零依赖确定性工具：JSON 查询、算式求值、编码哈希、文本/JSON 差异、正则、时间换算、CSV、统计、Markdown、JSON Schema。"
+  },
+  "icon": "./icon.svg",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "compatibility": {
+      "dsh": ">=0.2.0-rc.2 <0.3.0",
+      "dshReleases": {
+        "0.2.0-rc.2": "compatible"
+      },
+      "profiles": [
+        "web",
+        "desktop"
+      ]
+    }
+  }
+}

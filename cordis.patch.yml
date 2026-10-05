@@ -1,0 +1,8 @@
+# dsh-toolbox —— bundle patch layer
+#
+# 声明本包为一个标准 profile bundle：DSH 启动时按层栈应用本文件，
+# `insert` 出工具箱这一行（id 固定为 tool-box，profile patch 可定向覆盖它的 config）。
+- insert:
+    - id: tool-box
+      name: '@qlheric/dsh-toolbox'
+      config: {}

@@ -1,0 +1,4 @@
+{
+  "title": "DSH Toolbox",
+  "description": "Ten zero-dependency deterministic tools in one package: JSON query, math evaluation, encoding & hashing, text/JSON diff, regex, time conversion, CSV, statistics, Markdown, JSON Schema."
+}

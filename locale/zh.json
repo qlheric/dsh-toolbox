@@ -1,0 +1,4 @@
+{
+  "title": "DSH 工具箱",
+  "description": "一个包装齐十个零依赖确定性工具：JSON 查询、算式求值、编码哈希、文本/JSON 差异、正则、时间换算、CSV、统计、Markdown、JSON Schema。"
+}
