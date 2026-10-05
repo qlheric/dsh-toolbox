@@ -34,8 +34,19 @@
   "engines": {
     "node": "^22.19.0 || >=24.0.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qlheric/dsh-toolbox.git"
+  },
+  "homepage": "https://github.com/qlheric/dsh-toolbox#readme",
+  "bugs": {
+    "url": "https://github.com/qlheric/dsh-toolbox/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "test": "node --test test/"
+    "test": "node --test"
   },
   "meta": {
     "title": "DSH 工具箱（Toolbox）",
