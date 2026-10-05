@@ -17,16 +17,14 @@ Left alone it either estimates (and gets it wrong) or writes a throwaway script 
 
 ## Install
 
-> **Not published yet** (repo name and release pending). Two ways today:
-
-**A. Local (works now, verified)** — copy this directory into the profile's `node_modules/@qlheric/dsh-toolbox`, add `"@qlheric/dsh-toolbox"` to that profile's `dsh.profile.bundles`, restart dsh.
-
-**B. Once published (one command)**
 ```bash
 dsh plugin --profile <your-profile> add github:qlheric/dsh-toolbox
 ```
 
-> On this machine the `desktop` profile is owned by the Electron app (`dsh plugin --profile desktop` is refused), so only A applies there; other profiles can use B, where the official CLI reconciles bundles for you.
+Restart dsh; the tools appear as `json`, `calculator`, `encoding`, `diff`, `time`, `csv`, `regex`, `stat`, `markdown`, `schema`.
+
+> **Desktop (Electron) note**: the `desktop` profile is owned by the Electron app (the CLI refuses `--profile desktop`), so there you write `dsh.profile.bundles` in `package.json` and install with pnpm — that is how it is installed on this machine. Every other profile can use the command above; the CLI reconciles bundles for you.
+> Not published to npm yet — use the GitHub source above.
 
 ## Tools
 

@@ -19,16 +19,16 @@
 
 ## 安装
 
-> **尚未发布到 npm / GitHub**（仓库命名与发布待定）。现在就有两种装法：
+## 安装
 
-**A. 本地装（现在就能用，已验证）** —— 把本目录拷进 profile 的 `node_modules/@qlheric/dsh-toolbox`，并在该 profile 的 `package.json` 里给 `dsh.profile.bundles` 加一行 `"@qlheric/dsh-toolbox"`，重启 dsh。
-
-**B. 发布后（一条命令）**
 ```bash
 dsh plugin --profile <你的 profile> add github:qlheric/dsh-toolbox
 ```
 
-> 本机（桌面端）实测：desktop profile 被 Electron 独占（`dsh plugin --profile desktop` 会被拒），所以那里只能走 A；**非 desktop profile** 走 B，官方 CLI 会自动同步 bundles。
+装完重启 dsh，工具为 `json` / `calculator` / `encoding` / `diff` / `time` / `csv` / `regex` / `stat` / `markdown` / `schema`。
+
+> **桌面端（Electron）注意**：`desktop` profile 被 Electron 独占（`dsh plugin --profile desktop` 会被官方 CLI 拒绝），那里只能手写 `package.json` 的 `dsh.profile.bundles` 并用 pnpm 装（本机就是这么装的）；**其它 profile** 直接用上面这条命令，CLI 会自动同步 bundles。
+> npm 尚未发布（`npm install @qlheric/dsh-toolbox` 暂时不可用），请用上面的 GitHub 源。
 
 ## 快速上手
 
